@@ -21,7 +21,7 @@ function searchData (arg) {
 }
 
 function loadTickerData() {
-  var count = 0;
+  var uuid = 0;
   var i;
   var k;
 
@@ -30,12 +30,12 @@ function loadTickerData() {
     type = types[i];
     $.getJSON(`json/${type}_holders.json`, function(file) {
         for (k = 0; k < file.length; k++) {
-          count++;
+          uuid++;
           entry = file[k];
-          dataMap[count] = entry;
-          nameMap[entry.name] = count;
+          dataMap[uuid] = entry;
+          nameMap[entry.name] = uuid;
           if (entry.ticker) {
-            tickerMap[entry.ticker] = count;
+            tickerMap[entry.ticker] = uuid;
           }                 
         }
     })
