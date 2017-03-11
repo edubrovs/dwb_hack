@@ -247,6 +247,14 @@
       }
 
     }
+    table {
+      table-layout: fixed;
+      word-wrap: break-word;
+    }
+
+    td {
+      width:10%
+    }
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -357,48 +365,21 @@
       <table class="table">
           <thead>
               <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                  <th>Actions</th>
+                 <!--  <th>#</th> -->
+                  <th>Ticker</th>
+                  <th>Name</th>
+                  <th>GSK expense ratio</th>
+                  <th>PFE expense ratio</th>
               </tr>
           </thead>
           <tbody>
               <tr>
-                  <th scope="row">1</th>
-                  <td>Abby</td>
-                  <td>Barrett</td>
-                  <td>@abbeme</td>
-                  <td>
-                      <a class="blue-text"><i class="fa fa-user"></i></a>
-                      <a class="teal-text"><i class="fa fa-pencil"></i></a>
-                      <a class="red-text"><i class="fa fa-times"></i></a>
-                  </td>
+                 <!-- <th style="width:2%" scope="row">1</th> -->
+                  <td class="table_ticker"></td>
+                  <td class="table_name"></td>
+                  <td class="table_gsk"></td>
+                  <td class="table_pfe"></td>
               </tr>
-              <tr>
-                  <th scope="row">2</th>
-                  <td>Danny</td>
-                  <td>Collins</td>
-                  <td>@dennis</td>
-                  <td>
-                      <a class="blue-text"><i class="fa fa-user"></i></a>
-                      <a class="teal-text"><i class="fa fa-pencil"></i></a>
-                      <a class="red-text"><i class="fa fa-times"></i></a>
-                  </td>
-              </tr>
-              <tr>
-                  <th scope="row">3</th>
-                  <td>Clara</td>
-                  <td>Ericson</td>
-                  <td>@claris</td>
-                  <td>
-                     <a class="blue-text"><i class="fa fa-user"></i></a>
-                      <a class="teal-text"><i class="fa fa-pencil"></i></a>
-                      <a class="red-text"><i class="fa fa-times"></i></a>
-                  </td>
-              </tr>
-
           </tbody>
       </table>
       
