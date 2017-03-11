@@ -1,0 +1,54 @@
+[
+  {
+    "ticker": "VTSMX",
+    "cik": 36405
+  },
+  {
+    "ticker": "VFINX",
+    "cik": 36405
+  },
+  {
+    "ticker": "SPY",
+    "cik": 884394
+  },
+  {
+    "ticker": "VINIX",
+    "cik": 862084
+  },
+  {
+    "ticker": "VWNFX",
+    "cik": 107606
+  },
+  {
+    "ticker": "FUSEX",
+    "cik": 819118
+  },
+  {
+    "ticker": "VIVAX",
+    "cik": 36405
+  },
+  {
+    "ticker": "MEIAX",
+    "cik": 798244
+  },
+  {
+    "ticker": "FKINX",
+    "cik": 38721
+  },
+  {
+    "ticker": "VWELX",
+    "cik": 105563
+  },
+  {
+    "ticker": "VWINX",
+    "cik": 105544
+  },
+  {
+    "ticker": "VEIPX",
+    "cik": 826473
+  },
+  {
+    "ticker": "TRVLX",
+    "cik": 927845
+  }
+]

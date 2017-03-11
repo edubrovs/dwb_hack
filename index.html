@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script src="data.js"></script>
       <style>
 
     /* GLOBAL STYLES
@@ -400,35 +401,7 @@
 
           </tbody>
       </table>
-
-       <script type="text/javascript">
-          var types = [
-            'GSK_etf',
-            'GSK_inst',
-            'GSK_mfund',
-            'PFE_etf',
-            'PFE_inst',
-            'PFE_mfund'
-          ]
-
-          var data = loadTickerData();
-          console.log('data', data)
-
-          function searchData (arg) {
-            event.preventDefault();
-            console.log('arg',arg)
-          }
-
-          function loadTickerData() {
-            return types.map(function (type) {
-              return $.getJSON(`json/${type}_holders.json`);
-            })
-          }
-      </script>
-
-      <!-- /END THE FEATURETTES -->
-
-
+      
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
