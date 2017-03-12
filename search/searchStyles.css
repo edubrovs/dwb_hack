@@ -83,6 +83,25 @@
       word-wrap: break-word;
     }
 
+    .call {
+      width: 780px;
+      height: 52px;
+      font-family: FreightSansProBold;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #bf2b31;
+    }
+    
+    .descripton {
+       width: 1440px;
+        height: 898px;
+        background-color: #f7f7f7;
+      }
+
     td {
       width:10%
     }

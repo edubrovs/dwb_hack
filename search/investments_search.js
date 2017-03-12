@@ -8,22 +8,30 @@ var display = {
     nextButton: 'Finish'
 }
 
-var InvestmentTypes = [
-  'GSK_etf',
-  'GSK_inst',
-  'GSK_mfund',
-  'PFE_etf',
-  'PFE_inst',
-  'PFE_mfund'
-]
-
 var submitInput;
-var tickerMap = {};
-var nameMap = {};
-var dataMap = {};
+var tickerMap = {
+  FAM: 0,
+  VT: 1
+};
+var nameMap = {
+  'Fisher Asset Management LLC': 0,
+  'Vanguard Total LLC': 1
+};
+var dataMap = {
+  0: {
+    ticker: "FAM",
+    name: "Fisher Asset Management LLC",
+    type:"PFE"
+  },
+  1: {
+    ticker: "VT",
+    name: "Vanguard Total LLC",
+    type:"PFE"
+  }
+};
 
 $(document).ready(function () {
-  loadInvestmentData(); //dropdown!!!!!!!!
+ // loadInvestmentData(); //dropdown!!!!!!!!
   //callback?? async?
   console.log('loaded investments data')
 
@@ -69,28 +77,5 @@ function searchInvestmentData () {
     } else {
         $('.glyphon-pfe').show()
     }
-  }
-}
-
-function loadInvestmentData() {
-  var uuid = 0;
-  var i;
-  var k;
-
-  var type;
-  for (i = 0; i < InvestmentTypes.length; i++) {
-    type = InvestmentTypes[i];
-    $.getJSON(`../json/${type}_holders.json`, function(file) {
-        for (k = 0; k < file.length; k++) {
-          uuid++;
-          entry = file[k];
-          entry.type = (type.indexOf('GSK') !== -1) ? 'GSK' : 'PFE'
-          dataMap[uuid] = entry;
-          nameMap[entry.name] = uuid;
-          if (entry.ticker) {
-            tickerMap[entry.ticker] = uuid;
-          }                 
-        }
-    })
   }
 }
