@@ -4,7 +4,6 @@ var display = {
     'Look through your statement and enter the names of the items you invest in. ',
     searchTitle: 'Enter a ticker or fund name.',
     onsubmit: searchInvestmentData,
-    searchPlaceholder: 'e.g. PTTAX or Pimco Total Return',
     table: 'investments_table',
     nextButton: 'Finish'
 }

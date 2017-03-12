@@ -5,8 +5,7 @@ var display = {
     'your company might be helping Pfizer and GSK stocks indirectly by offering funds with their stocks to you.',
   searchTitle: 'If your company offers 401K, enter your company here',
   checkboxLabel: 'My company doesn\'t offer 401K',
-  onsubmit: searchCompany,
-  searchPlaceholder: 'e.g. Goldman Sachs'
+  onsubmit: searchCompany
 }
 
 var submitInput;
@@ -35,13 +34,13 @@ function loadDisplayText () {
     event.preventDefault(); 
     display.onsubmit()
   }
-  placeholder = display.searchPlaceholder //fixme
 }
 
 function searchCompany () {
   var input = $('.form-control').val()
   console.log('companies search arg', input)
   company = input
+  window.location.href = 'investments_search.html'
 }
 
 function loadCompanies () {

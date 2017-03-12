@@ -5,14 +5,85 @@
 
     body {
       padding-bottom: 40px;
-      color: #5a5a5a;
+    }
+    .search {
+      margin-top: 105px;
+      margin-left: auto;
+      width: 785px;
+      height: 457px;
+    }
+
+    .header {
+        width: 74px;
+      height: 29px;
+      font-family: Iron&Brine;
+      font-size: 25px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #2e2e2e;
     }
 
     .title {
-      color: #FF0000;
+       width: 780px;
+      height: 26px;
+      font-family: FreightSansProBold;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #bf2b31;
     }
-    
+
+    .subtitle {
+        width: 620px;
+        height: 72px;
+        font-family: FreightSansProMedium;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2e2e2e;
     }
+
+    .search_title {
+      width: 400px;
+      height: 18px;
+      font-family: FreightSansProMedium;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #2e2e2e;
+    }
+
+    .form_group {
+      width: 620px;
+      height: 45px;
+      background-color: #ffffff;
+      border: solid 1px #99999s9;
+    }
+
+    .custom_checkbox {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      position: absolute;
+      float: left;
+    }
+
+    .btn-default {
+      margin-top: 40px;
+    }
+
     table {
       table-layout: fixed;
       word-wrap: break-word;
