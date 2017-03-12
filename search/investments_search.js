@@ -46,6 +46,8 @@ function loadDisplayText () {
   $('.glyphon-gsk').hide()
   $('.glyphon-pfe').hide()
   $('.btn-finish').hide()
+  $('.call').hide()
+  $('.description').hide()
   $('.header').text('STEP 2')
   $('.title').text(display.title);
   $('.subtitle').text(display.subtitle);
