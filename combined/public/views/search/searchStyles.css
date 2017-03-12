@@ -1,0 +1,113 @@
+ <style>
+ /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+    }
+    .search {
+      margin-top: 105px;
+      margin-left: auto;
+      width: 785px;
+      height: 457px;
+    }
+
+    .header {
+      width: 200px;
+      height: 29px;
+      font-family: Iron&Brine;
+      font-size: 25px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #2e2e2e;
+    }
+
+    .title {
+       width: 780px;
+      height: 26px;
+      font-family: FreightSansProBold;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #bf2b31;
+    }
+
+    .subtitle {
+        width: 620px;
+        height: 70px;
+        font-family: FreightSansProMedium;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2e2e2e;
+    }
+
+    .search_title {
+      width: 400px;
+      height: 18px;
+      font-family: FreightSansProMedium;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #2e2e2e;
+    }
+
+    .form_group {
+      width: 620px;
+      height: 45px;
+      background-color: #cccccc;
+      border: solid 1px #999999;
+    }
+
+    .btn-default {
+      margin-top: 40px;
+      width: 247px;
+      height: 45px;
+    }
+
+    table {
+      table-layout: fixed;
+      word-wrap: break-word;
+    }
+
+    .call {
+      width: 780px;
+      height: 52px;
+      font-family: FreightSansProBold;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #bf2b31;
+    }
+    
+    .descripton {
+       width: 1440px;
+        height: 898px;
+        background-color: #f7f7f7;
+      }
+
+    td {
+      width:10%
+    }
+
+    .typeahead {
+      width: 40vw;
+      height: 45px;
+    }
+</style>
