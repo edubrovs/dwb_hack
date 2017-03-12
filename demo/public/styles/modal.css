@@ -1,0 +1,25 @@
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+#modal {
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  height: 120%;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to bottom,#EE3B34 0,#EE3B34 100%);
+  border-color: #EE3B34;
+}
