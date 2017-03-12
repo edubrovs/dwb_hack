@@ -33,6 +33,11 @@ $(document).ready(function () {
 
 function loadDisplayText () {
   console.log('loading display')
+
+  $('.investments_table').hide()
+  $('.glyphon-gsk').hide()
+  $('.glyphon-pfe').hide()
+  $('.btn-finish').hide()
   $('.header').text('STEP 2')
   $('.title').text(display.title);
   $('.subtitle').text(display.subtitle);
@@ -54,12 +59,15 @@ function searchInvestmentData () {
   console.log('dataFound',dataFound)
 
   if (dataFound) {
+    $('.btn-next').hide()
+    $('.investments_table').show()
+    $('.btn-finish').show()
     $('.table_ticker').text(dataFound.ticker)
     $('.table_name').text(dataFound.name)    
     if (dataFound.type === 'GSK') {
-      $('.table_gsk').text('YES')
+       $('.glyphon-gsk').show()
     } else {
-      $('.table_pfe').text('YES')
+        $('.glyphon-pfe').show()
     }
   }
 }
