@@ -49,27 +49,4 @@ function loadCompanies () {
   'Abt Associates',
   'Goldman Sachs '
   ]
-  /*
-    var httpRequest = new XMLHttpRequest();
-    httpRequest.onreadystatechange = function() {
-      if (httpRequest.readyState == 4){
-          // everything is good, the response is received
-          if ((httpRequest.status == 200) || (httpRequest.status == 0)) {
-              companies = $.csv.toArrays(httpRequest.responseText);
-          }
-      }
-    }
-    // Send the request
-    httpRequest.open("GET","http://localhost:80/dwb_app/csv/companies.csv", true);
-    httpRequest.send(null);
-    *
-  $.ajax({
-      url: "../csv/companies.csv",
-      success: function (csvd) {
-          companies = $.csv.toArrays(csvd);
-          console.log('companies', companies)
-      },
-      dataType: "text" 
-  });
-*/
 }
