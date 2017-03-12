@@ -14,7 +14,7 @@
     }
 
     .header {
-        width: 74px;
+        width: 200px;
       height: 29px;
       font-family: Iron&Brine;
       font-size: 25px;
@@ -42,7 +42,7 @@
 
     .subtitle {
         width: 620px;
-        height: 72px;
+        height: 70px;
         font-family: FreightSansProMedium;
         font-size: 16px;
         font-weight: normal;
@@ -69,19 +69,23 @@
     .form_group {
       width: 620px;
       height: 45px;
-      background-color: #ffffff;
-      border: solid 1px #99999s9;
+      background-color: #cccccc;
+      border: solid 1px #999999;
     }
 
-    .custom_checkbox {
-      margin-top: 40px;
-      margin-bottom: 40px;
-      position: absolute;
-      float: left;
-    }
+    .btn-default,
+.btn-default:hover,
+.btn-default:active,
+.btn-default:visited,
+.btn-default:focus {
+    background-color: #0000FF;
+    border-color: #8064A2;
+}
 
     .btn-default {
       margin-top: 40px;
+      width: 247px;
+      height: 45px;
     }
 
     table {

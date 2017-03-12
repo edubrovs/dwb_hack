@@ -4,7 +4,6 @@ var display = {
   subtitle: 'Why do we want to know? If you company offers 401K options, ' +
     'your company might be helping Pfizer and GSK stocks indirectly by offering funds with their stocks to you.',
   searchTitle: 'If your company offers 401K, enter your company here',
-  checkboxLabel: 'My company doesn\'t offer 401K',
   onsubmit: searchCompany
 }
 
@@ -27,7 +26,6 @@ function loadDisplayText () {
   $('.title').text(display.title);
   $('.subtitle').text(display.subtitle);
   $('.search_title').text(display.searchTitle); 
-  $('.checkbox_label').text(display.checkboxLabel); 
   $('.next_button').text(display.nextButton); 
 
   submitInput = function () {
