@@ -105,4 +105,9 @@
     td {
       width:10%
     }
+
+    .typeahead {
+      width: 40vw;
+      height: 45px;
+    }
 </style>
