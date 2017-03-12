@@ -1,0 +1,24 @@
+ <style>
+ /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+    .title {
+      color: #FF0000;
+    }
+    
+    }
+    table {
+      table-layout: fixed;
+      word-wrap: break-word;
+    }
+
+    td {
+      width:10%
+    }
+    </style>
