@@ -11,12 +11,33 @@ var submitInput;
 var company;
 var companies;
 $(document).ready(function () {
-  loadCompanies(); //dropdown!!!!!!!!
-  //callback?? async?
-  console.log('loaded companies data')
 
   loadDisplayText();
-  console.log('loaded companies search view')
+  console.log('hi')
+  var companies = [
+    'Goldasa',
+    'Goldemo',
+    'Goldfish',
+    'Goldlaunch',
+    'Goldman Sachs'
+  ]
+
+  var companies = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: companies
+  });
+
+  // Initializing the typeahead
+  $('.typeahead').typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: 'companies',
+    source: companies
+  });
 })
 
 
@@ -25,11 +46,11 @@ function loadDisplayText () {
   $('.header').text('STEP 1')
   $('.title').text(display.title);
   $('.subtitle').text(display.subtitle);
-  $('.search_title').text(display.searchTitle); 
-  $('.next_button').text(display.nextButton); 
+  $('.search_title').text(display.searchTitle);
+  $('.next_button').text(display.nextButton);
 
   submitInput = function () {
-    event.preventDefault(); 
+    event.preventDefault();
     display.onsubmit()
   }
 }
@@ -39,14 +60,4 @@ function searchCompany () {
   console.log('companies search arg', input)
   company = input
   window.location.href = 'investments_search.html'
-}
-
-function loadCompanies () {
-  companies = [
-   'Round Stones Inc.', 
-  'Factoring Inc.',
-  '5PSolutions',
-  'Abt Associates',
-  'Goldman Sachs '
-  ]
 }
