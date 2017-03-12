@@ -1,0 +1,42 @@
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  color: #fafafa;
+}
+
+body {
+  background-image: url('../assets/landing/hero-1.jpg')
+}
+
+.btn-primary {
+  background-image: linear-gradient(to bottom,#EE3B34 0,#EE3B34 100%);
+  border-color: #EE3B34;
+}
+
+#iwb {
+  font-family: Iron&Brine;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+#join {
+  font-family: FreightSansProBold;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+#blurb {
+  background-color: rgba(35, 31, 32, 0.5);
+  padding: 40px 20px 40px 20px;
+}
