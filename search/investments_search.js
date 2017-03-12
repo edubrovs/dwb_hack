@@ -18,29 +18,28 @@ var InvestmentTypes = [
   'PFE_mfund'
 ]
 
-loadInvestmentData(); //dropdown!!!!!!!!
-//callback?? async?
-console.log('loaded investments data')
-
 var submitInput;
-loadDisplayText();
-console.log('loaded investments search view')
-
 var tickerMap = {};
 var nameMap = {};
 var dataMap = {};
 
-function incrementSearchView () {
-  searchViewCounter++;
-}
+$(document).ready(function () {
+  loadInvestmentData(); //dropdown!!!!!!!!
+  //callback?? async?
+  console.log('loaded investments data')
+
+  loadDisplayText();
+  console.log('loaded investments search view')
+})
 
 function loadDisplayText () {
-  $('.header').val('STEP 2')
-  $('.title').val(display.title);
-  $('.subtitle').val(display.subtitle);
-  $('.search_title').val(display.searchTitle); 
-  $('.checkbox_label').val(display.checkboxLabel); 
-  $('.next_button').val(display.nextButton); 
+  console.log('loading display')
+  $('.header').text('STEP 2')
+  $('.title').text(display.title);
+  $('.subtitle').text(display.subtitle);
+  $('.search_title').text(display.searchTitle); 
+  $('.checkbox_label').text(display.checkboxLabel); 
+  $('.next_button').text(display.nextButton); 
 
   submitInput = function () {
     event.preventDefault(); 

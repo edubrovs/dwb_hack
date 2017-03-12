@@ -9,24 +9,27 @@ var display = {
   searchPlaceholder: 'e.g. Goldman Sachs'
 }
 
-var companies;
-loadCompanies(); //dropdown!!!!!!!!
-//callback?? async?
-console.log('loaded companies data')
-
 var submitInput;
-loadDisplayText();
-console.log('loaded companies search view')
-
 var company;
+var companies;
+$(document).ready(function () {
+  loadCompanies(); //dropdown!!!!!!!!
+  //callback?? async?
+  console.log('loaded companies data')
+
+  loadDisplayText();
+  console.log('loaded companies search view')
+})
+
 
 function loadDisplayText () {
-  $('.header').val('STEP 1')
-  $('.title').val(display.title);
-  $('.subtitle').val(display.subtitle);
-  $('.search_title').val(display.searchTitle); 
-  $('.checkbox_label').val(display.checkboxLabel); 
-  $('.next_button').val(display.nextButton); 
+  console.log('loading display')
+  $('.header').text('STEP 1')
+  $('.title').text(display.title);
+  $('.subtitle').text(display.subtitle);
+  $('.search_title').text(display.searchTitle); 
+  $('.checkbox_label').text(display.checkboxLabel); 
+  $('.next_button').text(display.nextButton); 
 
   submitInput = function () {
     event.preventDefault(); 
